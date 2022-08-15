@@ -21,10 +21,6 @@ public class LogoTextureMixin extends SimpleTexture {
         super(p_118133_);
     }
 
-    /**
-     * @author cal6541
-     * @reason tiny potato
-     */
     @Overwrite(remap = false)
     public SimpleTexture.TextureImage getTextureImage(ResourceManager resourceManager) {
         try {

@@ -35,14 +35,14 @@ public class MojangsterConfig implements ConfigData {
     @ConfigEntry.Category("sound")
     public boolean playSound = true;
     @ConfigEntry.Category("sound")
-    public int soundFrame = 35;
+    public int soundFrame = 0;
     @ConfigEntry.Category("sound")
     public String soundName = "default.wav";
     @ConfigEntry.Category("anim")
     @ConfigEntry.Gui.PrefixText()
     public boolean dontAnimate = false;
     @ConfigEntry.Category("anim")
-    public int animationSpeed = 33;
+    public int animationSpeed = 41;
     @ConfigEntry.Category("anim")
     public boolean hideLoadingBar = false;
     @ConfigEntry.Category("anim")

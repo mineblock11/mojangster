@@ -86,10 +86,6 @@ public abstract class LoadingOverlayMixin extends Overlay implements SplashOverl
         soundName = MojangsterConfig.getInstance().soundName;
     }
 
-    /**
-     * @author cal6541
-     * @reason tiny potato
-     */
     @Overwrite(remap = false)
     public void render(PoseStack stack, int mouseX, int mouseY, float delta) {
         
