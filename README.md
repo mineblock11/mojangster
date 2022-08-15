@@ -1,3 +1,4 @@
+[![](https://dcbadge.vercel.app/api/server/gAQwyhWdgQ)](https://discord.gg/gAQwyhWdgQ)   
 [![CurseForge-Downloads](http://cf.way2muchnoise.eu/mojangster.svg)](https://www.curseforge.com/minecraft/mc-mods/mojangster)   
 [![CurseForge-Availability](http://cf.way2muchnoise.eu/versions/mojangster.svg)](https://www.curseforge.com/minecraft/mc-mods/mojangster)
 
