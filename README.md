@@ -1,3 +1,6 @@
+[![CurseForge-Downloads](http://cf.way2muchnoise.eu/mojangster.svg)](https://www.curseforge.com/minecraft/mc-mods/mojangster)   
+[![CurseForge-Availability](http://cf.way2muchnoise.eu/versions/mojangster.svg)](https://www.curseforge.com/minecraft/mc-mods/mojangster)
+
 <p style="text-align: center;">
   <img style="display: block; margin-left: auto; margin-right: auto;" src="https://images.squarespace-cdn.com/content/v1/545a3f8ae4b09adaa34659fb/1422562530063-AFSVX9LC0JMDD2DUDD62/000+LineBreak-01.png?format=1500w" alt="000+LineBreak-01" width="643" height="66" />
 </p>
