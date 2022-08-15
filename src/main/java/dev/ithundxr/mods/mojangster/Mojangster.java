@@ -46,12 +46,6 @@ public class Mojangster {
     public static final Path animPath = Paths.get(mojankDir.toString(), "/anim.png");
     public static final Path customs = Paths.get(mojankDir.toString(), "/custom/");
 
-    /**
-     * Copy a file from source to destination.
-     *
-     * @param source      the source
-     * @param destination the destination
-     */
     public static void copy(InputStream source, String destination) {
         LOGGER.info("Copying ->" + source + "\n\tto ->" + destination);
         try {

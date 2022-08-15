@@ -18,7 +18,7 @@ apply plugin: 'org.spongepowered.mixin'
 apply plugin: 'org.parchmentmc.librarian.forgegradle'
 
 group = 'dev.ithundxr.mods'
-version = '1.0.0-1.18.2'
+version = '4.2.0-1.18.2'
 
 java {
     archivesBaseName = 'mojangster'
