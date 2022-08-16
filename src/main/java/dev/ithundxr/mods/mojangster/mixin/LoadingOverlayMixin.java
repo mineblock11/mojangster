@@ -17,6 +17,7 @@ import net.minecraft.resources.ResourceLocation;
 import net.minecraft.server.packs.resources.ReloadInstance;
 import net.minecraft.util.FastColor;
 import net.minecraft.util.Mth;
+import org.jetbrains.annotations.NotNull;
 import org.spongepowered.asm.mixin.Final;
 import org.spongepowered.asm.mixin.Mixin;
 import org.spongepowered.asm.mixin.Overwrite;
@@ -56,7 +57,8 @@ public abstract class LoadingOverlayMixin extends Overlay implements SplashOverl
     private boolean playedSound;
     private int animationSpeed;
 
-    @Shadow(remap = false) @Final private static ResourceLocation MOJANG_STUDIOS_LOGO_LOCATION;
+    @Shadow(remap = false) @Final
+    static ResourceLocation MOJANG_STUDIOS_LOGO_LOCATION;
     private boolean canPlaySound;
     private int barColor;
     private int logoColor;
@@ -86,14 +88,18 @@ public abstract class LoadingOverlayMixin extends Overlay implements SplashOverl
         soundName = MojangsterConfig.getInstance().soundName;
     }
 
+    /**
+     * @author IThundxr
+     * @reason Rendering
+     */
     @Overwrite(remap = false)
-    public void render(PoseStack stack, int mouseX, int mouseY, float delta) {
-        
+    public void render(@NotNull PoseStack stack, int mouseX, int mouseY, float delta) {
+
         if(!animationStarted) {
             animationStarted = true;
             animationStart = Util.getMillis();
         }
-        
+
         int scaledWidth = this.minecraft.getWindow().getGuiScaledWidth();
         int scaledHeight = this.minecraft.getWindow().getGuiScaledHeight();
         long currentTime = Util.getMillis();

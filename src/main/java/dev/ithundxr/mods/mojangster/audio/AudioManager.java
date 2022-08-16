@@ -1,10 +1,11 @@
 package dev.ithundxr.mods.mojangster.audio;
 
-import dev.ithundxr.mods.mojangster.config.MojangsterConfig;
+
 import dev.ithundxr.mods.mojangster.Mojangster;
+import dev.ithundxr.mods.mojangster.config.MojangsterConfig;
 import net.minecraft.client.Minecraft;
 import net.minecraft.client.gui.components.toasts.SystemToast;
-import net.minecraft.network.chat.TextComponent;
+import net.minecraft.network.chat.Component;
 
 import javax.sound.sampled.*;
 import java.io.File;
@@ -46,7 +47,7 @@ public class AudioManager {
         if (!MojangsterConfig.getInstance().playSound)
             return;
         if (Objects.isNull(clip)) {
-            Mojangster.OVERLAY_INSTANCE.addEndListener(() -> Minecraft.getInstance().getToasts().addToast(new SystemToast(SystemToast.SystemToastIds.PACK_LOAD_FAILURE, new TextComponent("Sound not found."), new TextComponent("Couldn't find " + id + " in the /mojank/custom folder."))));
+            Mojangster.OVERLAY_INSTANCE.addEndListener(() -> Minecraft.getInstance().getToasts().addToast(new SystemToast(SystemToast.SystemToastIds.PACK_LOAD_FAILURE, Component.literal("Sound not found."), Component.literal("Couldn't find " + id + " in the /mojank/custom folder."))));
             return;
         }
         clip.start();

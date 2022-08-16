@@ -18,7 +18,7 @@ apply plugin: 'org.spongepowered.mixin'
 apply plugin: 'org.parchmentmc.librarian.forgegradle'
 
 group = 'dev.ithundxr.mods'
-version = '4.2.0-1.18.2'
+version = '4.2.0-1.19'
 
 java {
     archivesBaseName = 'mojangster'
@@ -27,7 +27,8 @@ java {
 
 minecraft {
     accessTransformer = file('src/main/resources/META-INF/accesstransformer.cfg')
-    mappings channel: 'parchment', version: '2022.08.07-1.18.2'
+    mappings channel: 'parchment', version: '2022.08.10-1.19.2'
+    //mappings channel: 'official', version: '1.19'
     runs {
         client {
             workingDirectory project.file('run')
@@ -88,9 +89,9 @@ configurations {
 }
 
 dependencies {
-    minecraft 'net.minecraftforge:forge:1.18.2-40.1.0'
-    runtimeOnly fg.deobf("me.shedaniel.cloth:cloth-config-forge:6.2.62")
-    implementation fg.deobf("me.shedaniel.cloth:cloth-config-forge:6.2.62")
+    minecraft 'net.minecraftforge:forge:1.19-41.1.0'
+    runtimeOnly fg.deobf("me.shedaniel.cloth:cloth-config-forge:8.0.75")
+    implementation fg.deobf("me.shedaniel.cloth:cloth-config-forge:8.0.75")
     annotationProcessor 'org.spongepowered:mixin:0.8:processor'
 }
 jar {

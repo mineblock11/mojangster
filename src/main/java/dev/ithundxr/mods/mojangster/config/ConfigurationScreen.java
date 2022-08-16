@@ -1,11 +1,8 @@
 package dev.ithundxr.mods.mojangster.config;
 
 import com.mojang.blaze3d.vertex.PoseStack;
-import net.minecraft.client.Minecraft;
-import net.minecraft.client.gui.Gui;
 import net.minecraft.client.gui.screens.Screen;
 import net.minecraft.network.chat.Component;
-import net.minecraft.network.chat.TextComponent;
 
 public class ConfigurationScreen extends Screen {
     public ConfigurationScreen(Component p_96550_) {

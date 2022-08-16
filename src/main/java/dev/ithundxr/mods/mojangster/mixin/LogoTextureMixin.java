@@ -8,6 +8,7 @@ import net.minecraft.client.renderer.texture.SimpleTexture;
 import net.minecraft.client.resources.metadata.texture.TextureMetadataSection;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.server.packs.resources.ResourceManager;
+import org.jetbrains.annotations.NotNull;
 import org.spongepowered.asm.mixin.Mixin;
 import org.spongepowered.asm.mixin.Overwrite;
 
@@ -21,8 +22,12 @@ public class LogoTextureMixin extends SimpleTexture {
         super(p_118133_);
     }
 
+    /**
+     * @author IThundxr
+     * @reason Logo
+     */
     @Overwrite(remap = false)
-    public SimpleTexture.TextureImage getTextureImage(ResourceManager resourceManager) {
+    public SimpleTexture.@NotNull TextureImage getTextureImage(@NotNull ResourceManager resourceManager) {
         try {
 
             InputStream inputStream;
