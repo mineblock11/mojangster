@@ -88,7 +88,7 @@ public abstract class LoadingOverlayMixin extends Overlay implements SplashOverl
 
     /**
      * @author IThundxr
-     * @reason Renderer
+     * @reason Renderer thing
      */
     @Overwrite
     public void render(PoseStack stack, int mouseX, int mouseY, float delta) {
