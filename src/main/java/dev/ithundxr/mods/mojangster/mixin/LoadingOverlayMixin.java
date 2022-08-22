@@ -36,27 +36,27 @@ public abstract class LoadingOverlayMixin extends Overlay implements SplashOverl
         this.isConfig = true;
     }
 
-    @Shadow(remap = false) private float currentProgress;
+    @Shadow private float currentProgress;
 
-    @Shadow(remap = false) @Final private Minecraft minecraft;
+    @Shadow @Final private Minecraft minecraft;
 
-    @Shadow(remap = false) @Final private Consumer<Optional<Throwable>> onFinish;
+    @Shadow @Final private Consumer<Optional<Throwable>> onFinish;
 
-    @Shadow(remap = false) @Final private ReloadInstance reload;
+    @Shadow @Final private ReloadInstance reload;
 
-    @Shadow(remap = false) private long fadeOutStart;
+    @Shadow private long fadeOutStart;
 
-    @Shadow(remap = false) @Final private boolean fadeIn;
+    @Shadow @Final private boolean fadeIn;
 
-    @Shadow(remap = false) private long fadeInStart;
+    @Shadow private long fadeInStart;
 
-    @Shadow(remap = false) @Final private static IntSupplier BRAND_BACKGROUND;
+    @Shadow @Final private static IntSupplier BRAND_BACKGROUND;
     private long animationStart;
     private boolean dontAnimate;
     private boolean playedSound;
     private int animationSpeed;
 
-    @Shadow(remap = false) @Final private static ResourceLocation MOJANG_STUDIOS_LOGO_LOCATION;
+    @Shadow @Final private static ResourceLocation MOJANG_STUDIOS_LOGO_LOCATION;
     private boolean canPlaySound;
     private int barColor;
     private int logoColor;
@@ -86,7 +86,11 @@ public abstract class LoadingOverlayMixin extends Overlay implements SplashOverl
         soundName = MojangsterConfig.getInstance().soundName;
     }
 
-    @Overwrite(remap = false)
+    /**
+     * @author IThundxr
+     * @reason Renderer
+     */
+    @Overwrite
     public void render(PoseStack stack, int mouseX, int mouseY, float delta) {
         
         if(!animationStarted) {

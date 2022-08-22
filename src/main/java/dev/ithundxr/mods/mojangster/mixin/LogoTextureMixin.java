@@ -21,6 +21,10 @@ public class LogoTextureMixin extends SimpleTexture {
         super(p_118133_);
     }
 
+    /**
+     * @author IThundxr
+     * @reason Texture
+     */
     @Overwrite(remap = false)
     public SimpleTexture.TextureImage getTextureImage(ResourceManager resourceManager) {
         try {
