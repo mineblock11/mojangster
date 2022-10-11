@@ -1,3 +1,7 @@
+<p style="text-align: center;"><span style="color: #ff0000; font-size: 36px;">ATTENTION!</span></p>
+<p style="text-align: center;"><span style="color: #ff0000; font-size: 14px;">I have recently found out the original owner stole assets and did bad things because of that I am discontinuing development of this mod and will not be updating it if anyone would like to make this but with new assets not stolen by the previous author (before me) feel free to do so and make a PR on the&nbsp;<a href="https://github.com/IThundxr/mojangster">github</a></span></p>
+
+
 [![](https://dcbadge.vercel.app/api/server/gAQwyhWdgQ)](https://discord.gg/gAQwyhWdgQ)   
 [![CurseForge-Downloads](http://cf.way2muchnoise.eu/mojangster.svg)](https://www.curseforge.com/minecraft/mc-mods/mojangster)   
 [![CurseForge-Availability](http://cf.way2muchnoise.eu/versions/mojangster.svg)](https://www.curseforge.com/minecraft/mc-mods/mojangster)
