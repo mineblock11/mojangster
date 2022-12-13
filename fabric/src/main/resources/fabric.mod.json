@@ -1,0 +1,35 @@
+{
+  "schemaVersion": 1,
+  "id": "mojangster",
+  "version": "${version}",
+  "name": "Mojangster",
+  "description": "Animated Loading Screen from Minecraft Live",
+  "authors": [
+    "mineblock11"
+  ],
+  "contact": {
+    "website": "https://mineblock11.dev/",
+    "repo": "https://github.com/mineblock11/mojangster",
+    "issues": "https://github.com/mineblock11/mojangster/issues"
+  },
+  "license": "LGPL-3.0",
+  "icon": "icon.png",
+  "environment": "*",
+  "entrypoints": {
+    "main": [
+      "com.mineblock.mojangster.fabric.MojangsterFabric"
+    ],
+    "preLaunch": [
+      "com.mineblock.mojangster.fabric.MojangsterFabric"
+    ]
+  },
+  "accessWidener": "mojangster.accessWidener",
+  "mixins": [
+    "mojangster.mixins.json",
+    "mojangster-common.mixins.json"
+  ],
+  "depends": {
+    "fabricloader": ">=0.14.11",
+    "minecraft": ">=1.19.2"
+  }
+}
